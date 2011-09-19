@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?><items>
+<default>
+	<slideshow_width>650</slideshow_width>
+	<slideshow_height>350</slideshow_height>
+	<bgcolor>0xFFFFFF</bgcolor>
+	<auto_slide>true</auto_slide>
+	<slide_time>5</slide_time>
+	<timer_x>440</timer_x>
+	<timer_y>250</timer_y>
+	<isReflection>true</isReflection>
+	<backColor_1>0x000000</backColor_1>
+	<backColor_2>0xCCCCCC</backColor_2>
+	<headerFontColor>0xFFFFFF</headerFontColor>
+	<headerFontSize>25</headerFontSize>
+	<descFontColor>0xFFFFFF</descFontColor>
+	<descFontSize>12</descFontSize>
+	<bigImgWidth>600</bigImgWidth>
+	<bigImgHeight>400</bigImgHeight>
+	<smallImgWidth>225</smallImgWidth>
+	<smallImgHeight>150</smallImgHeight>
+	<wmode>transparent</wmode>
+</default>
+	<item> <bigImg>wp-content/plugins/wp-levoslideshow/images/31.jpg</bigImg><bigUrl>http://xmlswf.com</bigUrl>
+			<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+			<bigIsScaled>false</bigIsScaled> <smallImg>wp-content/plugins/wp-levoslideshow/thumbs/31.jpg</smallImg><smallUrl>http://xmlswf.com</smallUrl>
+			<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+			<smallX>100</smallX>
+			<smallY>100</smallY>
+			<smallIsScaled>true</smallIsScaled><header><![CDATA[Header one]]></header><desc><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed eleifend urna eu sapien.]]></desc>
+	</item>
+	<item> <bigImg>wp-content/plugins/wp-levoslideshow/images/38.jpg</bigImg><bigUrl>http://xmlswf.com</bigUrl>
+			<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+			<bigIsScaled>true</bigIsScaled> <smallImg>wp-content/plugins/wp-levoslideshow/thumbs/38.jpg</smallImg><smallUrl>http://xmlswf.com</smallUrl>
+			<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+			<smallX>100</smallX>
+			<smallY>150</smallY>
+			<smallIsScaled>true</smallIsScaled><header><![CDATA[Header two]]></header><desc><![CDATA[ Quisque posuere nunc eu massa. Praesent bibendum lorem non leo.]]></desc>
+	</item>
+	<item> <bigImg>wp-content/plugins/wp-levoslideshow/images/41.jpg</bigImg><bigUrl>http://xmlswf.com</bigUrl>
+			<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+			<bigIsScaled>false</bigIsScaled> <smallImg>wp-content/plugins/wp-levoslideshow/thumbs/41.jpg</smallImg><smallUrl>http://xmlswf.com</smallUrl>
+			<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+			<smallX>100</smallX>
+			<smallY>150</smallY>
+			<smallIsScaled>true</smallIsScaled><header><![CDATA[Header three]]></header><desc><![CDATA[Praesent bibendum lorem non leo. Morbi volutpat, urna eu fermentum rutrum, ligula lacus interdum mauris, ac pulvinar libero pede a en]]></desc>
+	</item>
+	<item> <bigImg>wp-content/plugins/wp-levoslideshow/images/39.jpg</bigImg><bigUrl>http://xmlswf.com</bigUrl>
+			<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+			<bigIsScaled>false</bigIsScaled> <smallImg>wp-content/plugins/wp-levoslideshow/thumbs/39.jpg</smallImg><smallUrl>http://xmlswf.com</smallUrl>
+			<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+			<smallX>100</smallX>
+			<smallY>150</smallY>
+			<smallIsScaled>true</smallIsScaled><header><![CDATA[Header four]]></header><desc><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed eleifend urna eu sapien.]]></desc>
+	</item>
+	<item> <bigImg>wp-content/plugins/wp-levoslideshow/images/30.jpg</bigImg><bigUrl>http://xmlswf.com</bigUrl>
+			<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+			<bigIsScaled>false</bigIsScaled> 
+			
+			<header><![CDATA[Header five]]></header><desc><![CDATA[Sed eleifend urna eu sapien. Quisque posuere nunc eu massa. Praesent bibendum lorem non leo.]]></desc>
+	</item>
+</items>
