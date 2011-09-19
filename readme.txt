@@ -43,12 +43,21 @@ Requirements/Restrictions:
 6. Please make "wp-content/plugins/wp-levoslideshow/images","wp-content/plugins/wp-levoslideshow/thumbs", directories writeable(755)" directories writeable(755)
 
 
-you have problems in using this plugin please contact at addons@wpslideshow.com
+For working demo : http://wpslideshow.com/levo-slidehsow/
 
+you have problems in using this plugin please contact at addons@wpslideshow.com
 
 == Screenshots ==
 
-For working demo : http://wpslideshow.com/levo-slidehsow/
+1. screenshot-1.png is the front-end slideshow page.
+
+2. screenshot-2.png is the  tab on the `Admin Plugins` page.
+
+3. screenshot-3.png is the settings of the slideshow page.
+
+4. screenshot-4.png adding the shortcode `[levo_slideshow]` in a Page.
+
+5. screenshot-5.png Making Config Button below plugin parameters.
 
 == How to use it as a widget ==
 
