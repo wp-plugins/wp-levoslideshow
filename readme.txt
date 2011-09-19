@@ -21,7 +21,9 @@ It is also allows to use it as a widget. You can also enable this LEVO slideshow
 * Image description
 * Customizable font sizes and colors
 * Customizable auto play time
-* Play/Pause, next,previous images o
+* Play/Pause, next,previous images
+
+For working demo : http://wpslideshow.com/levo-slidehsow/
 
 Requirements/Restrictions:
 -------------------------
@@ -45,6 +47,8 @@ Requirements/Restrictions:
 6. Please make "wp-content/plugins/wp-levoslideshow/images","wp-content/plugins/wp-levoslideshow/thumbs", directories writeable(755)" directories writeable(755)
 
 you have problems in using this plugin please contact at addons@wpslideshow.com
+
+For working demo : http://wpslideshow.com/levo-slidehsow/
 
 == Screenshots ==
 
