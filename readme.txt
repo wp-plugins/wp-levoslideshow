@@ -23,8 +23,6 @@ It is also allows to use it as a widget. You can also enable this LEVO slideshow
 * Customizable auto play time
 * Play/Pause, next,previous images
 
-For working demo : http://wpslideshow.com/levo-slidehsow/
-
 Requirements/Restrictions:
 -------------------------
  * Works with Wordpress 3.0, WPMU (Wordpress 3.0+ is highly recommended)
