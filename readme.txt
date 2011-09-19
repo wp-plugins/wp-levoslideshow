@@ -27,7 +27,9 @@ Requirements/Restrictions:
 -------------------------
  * Works with Wordpress 3.0, WPMU (Wordpress 3.0+ is highly recommended)
  * PHP5 
- 
+
+ For working demo : http://wpslideshow.com/levo-slidehsow/
+
 == Installation ==
 
 1. Install automatically through the `Plugins`, `Add New` menu in WordPress, or upload the `wp-levoslideshow` folder to the `/wp-content/plugins/` directory. 
@@ -41,9 +43,6 @@ Requirements/Restrictions:
 5.Click on "Make Config.xml" below plugin parameters list.
 
 6. Please make "wp-content/plugins/wp-levoslideshow/images","wp-content/plugins/wp-levoslideshow/thumbs", directories writeable(755)" directories writeable(755)
-
-
-For working demo : http://wpslideshow.com/levo-slidehsow/
 
 you have problems in using this plugin please contact at addons@wpslideshow.com
 
