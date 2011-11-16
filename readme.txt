@@ -11,8 +11,7 @@ LEVO Slideshow is a plugin that allows you to display a slideshow on your websit
 
 == Description ==
 
-LEVO Slideshow is a plugin that allows you to display a flash slideshow on your website.
-It is also allows to use it as a widget. You can also enable this LEVO slideshow on your wordpress site by placing code snippet in your template php file.
+LEVO Slideshow is a plugin that allows you to display a flash slideshow on your website.It is also allows to use it as a widget. You can also enable this LEVO slideshow on your wordpress site by placing code snippet in your template php file.
 
 **Features**
 
@@ -41,8 +40,6 @@ Requirements/Restrictions:
 4. Add the shortcode `[levo_slideshow]` in a Page, Post. Here is how: Log into your blog admin dashboard. Click `Pages`, click `Add New`, add a title to your page, enter the shortcode `[levo_slideshow]` in the page, click `Publish`.
 
 5.Click on "Make Config.xml" below plugin parameters list.
-
-6. Please make "wp-content/plugins/wp-levoslideshow/images","wp-content/plugins/wp-levoslideshow/thumbs", directories writeable(755)" directories writeable(755)
 
 you have problems in using this plugin please contact at addons@wpslideshow.com
 

@@ -1,14 +1,14 @@
 <?php
  /**
  * @package LEVO Slidehsow Plugin for WordPress
- * @version 1.0
+ * @version 1.1
  */
 /*
 Plugin Name: LEVO Slidehsow
 plugin uri: http://wpslideshow.com/levo-slideshow/
 Description: Yet Another Simple Slideshow Plugin for WordPress is a plugin that allows you to display a flash gallery on your site.It is also allows to use it as a widget. You can also enable this flash gallery on your wordpress site by placing code snippet in your template php file.
 Author: wpslideshow.com
-Version: 1.0
+Version: 1.1
 Author URI: http://wpslideshow.com
 */
 
@@ -297,18 +297,13 @@ Gradient Color1: <input type="text" name="bg_gradient1" value="<?php echo $temp[
 
 Gradient Color2: <input type="text" name="bg_gradient2" value="<?php echo $temp["backColor_2"];?>" /><br>
 
-Header Text Color: <input type="text" name="header_fontcolor" value="<?php echo $temp["headerFontColor"];?>" /><br>
+Title Color: <input type="text" name="header_fontcolor" value="<?php echo $temp["headerFontColor"];?>" /><br>
 
-Header Text Size: <input type="text" name="header_fontsize" value="<?php echo $temp["headerFontSize"];?>" /><br>
+Title Size: <input type="text" name="header_fontsize" value="<?php echo $temp["headerFontSize"];?>" /><br>
 
-Show Description: <select name="show_desc">
-<option value="yes" <?php if($temp["showDesc"]=="yes")echo "selected=\"selected\""; ?>>YES</option>
-<option value="no" <?php if($temp["showDesc"]=="no")echo "selected=\"selected\""; ?>>NO</option>
-</select><br>
+Description Color: <input type="text" name="desc_fontcolor" value="<?php echo $temp["descFontColor"];?>" /><br>
 
-Description Text Color: <input type="text" name="desc_fontcolor" value="<?php echo $temp["descFontColor"];?>" /><br>
-
-Description Text Size: <input type="text" name="desc_fontsize" value="<?php echo $temp["descFontSize"];?>" /><br>
+Description Size: <input type="text" name="desc_fontsize" value="<?php echo $temp["descFontSize"];?>" /><br>
 
 Big Image Width: <input type="text" name="bigimg_width" value="<?php echo $temp["bigImgWidth"];?>" /><br>
 
@@ -360,7 +355,7 @@ for ($i=0;$i<count($temp["picStorage"]);$i++)
 ?>
 <fieldset  style="border:1px solid #000000;padding:10px;">
 <legend>Slideshow images <?php echo $i+1?></legend>
-<span>Big Image Link:<input type="text" value="<?php echo $temp["picStorage"][$i]["url"]; ?>" /> Small Image Link:<input type="text" value="<?php echo $temp["picStorage"][$i]["small_url"]; ?>" /><br> <select onchange="handleSelectChange(this)"><option value="YES" <?php if($temp["picStorage"][$i]["Pic"]==""){"selected=\"selected\"";} ?>>Upload Image</option><option value="NO" <?php if($temp["picStorage"][$i]["Pic"]!=""){echo "selected=\"selected\"";} ?>>Use image path</option></select> <div style="display:inline;"><div style="display:inline;<?php if($temp["picStorage"][$i]["Pic"]==""){echo "display:none";} ?>">Download Image:<input type="text" value="<?php echo $temp["picStorage"][$i]["thumb"]; ?>" />Full Image:<input type="text" value="<?php echo $temp["picStorage"][$i]["Pic"]; ?>" /></div> <div style="<?php if($temp["picStorage"][$i]["Pic"]!=""){echo "display:none";} ?>">Download Image&nbsp;: <input type='file' <?php if($temp["picStorage"][$i]["Pic"]!=""){echo "disabled=true";} ?> name='file<?php echo $i; ?>' />image: <input type='file' <?php if($temp["picStorage"][$i]["Pic"]!=""){echo "disabled=true";} ?> name='file_image<?php echo $i; ?>' /></div></div><br><input type="text" style="display:none" value="<?php echo $temp["picStorage"][$i]["video"]; ?>" /> Description&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["Desc"]; ?>" /> Title&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["title"]; ?>" /><input type="text" style="display:none" value="<?php echo $temp["picStorage"][$i]["Title"]; ?>" /><br>
+<span>Big Image Link:<input type="text" value="<?php echo $temp["picStorage"][$i]["url"]; ?>" /> Small Image Link:<input type="text" value="<?php echo $temp["picStorage"][$i]["small_url"]; ?>" /><br> <select onchange="handleSelectChange(this)"><option value="YES" <?php if($temp["picStorage"][$i]["Pic"]==""){"selected=\"selected\"";} ?>>Upload Image</option><option value="NO" <?php if($temp["picStorage"][$i]["Pic"]!=""){echo "selected=\"selected\"";} ?>>Use image path</option></select> <div style="display:inline;"><div style="display:inline;<?php if($temp["picStorage"][$i]["Pic"]==""){echo "display:none";} ?>">Download Image:<input type="text" value="<?php echo $temp["picStorage"][$i]["thumb"]; ?>" />Full Image:<input type="text" value="<?php echo $temp["picStorage"][$i]["Pic"]; ?>" /></div> <div style="<?php if($temp["picStorage"][$i]["Pic"]!=""){echo "display:none";} ?>">Download Image&nbsp;: <input type='file' name='file<?php echo $i; ?>' />image: <input type='file' name='file_image<?php echo $i; ?>' /></div></div><br><input type="text" style="display:none" value="<?php echo $temp["picStorage"][$i]["video"]; ?>" /> Description&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["Desc"]; ?>" /> Title&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["title"]; ?>" /><input type="text" style="display:none" value="<?php echo $temp["picStorage"][$i]["Title"]; ?>" /><br>
 Small Image x-Position&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["smallx"]; ?>" />
 Small Image Y-Position&nbsp;:<input type="text" value="<?php echo $temp["picStorage"][$i]["smally"]; ?>" />
 <input type="button" value="+" onclick="slidePicsAdd(this)" /><input type="button" value="-" onclick="slidePicsDelete(this)" /></span><br>
