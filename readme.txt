@@ -4,7 +4,7 @@ Contributors: wpslideshow.com
 Author URI: http://wpslideshow.com/levo-slidehsow/
 Tags: slideshow, flash
 Requires at least: 3.0
-Tested up to: 3.2.1
+Tested up to: 3.3
 Stable tag: trunk
 
 LEVO Slideshow is a plugin that allows you to display a slideshow on your website.
@@ -35,11 +35,11 @@ Requirements/Restrictions:
 
 2. Activate the plugin through the `Plugins` menu in WordPress. Look for the "LEVO Slideshow settings" link  on left side menu to configure the Options. 
 
-3. Click on "LEVO Slideshow settings" on leftside menu, you can find "make config.xml" on right side panel bottom location, click on it. 
+3. Click on `LEVO Slideshow settings` on leftside menu, you can find `make config.xml` on right side panel bottom location, click on it. 
 
 4. Add the shortcode `[levo_slideshow]` in a Page, Post. Here is how: Log into your blog admin dashboard. Click `Pages`, click `Add New`, add a title to your page, enter the shortcode `[levo_slideshow]` in the page, click `Publish`.
 
-5.Click on "Make Config.xml" below plugin parameters list.
+5.Click on `Make Config.xml` below plugin parameters list.
 
 you have problems in using this plugin please contact at addons@wpslideshow.com
 
@@ -59,11 +59,11 @@ For working demo : http://wpslideshow.com/levo-slidehsow/
 
 == How to use it as a widget ==
 
-After installing "wp-yasslideshow" plugin in your theme just follow below instructions.
+After installing `wp-yasslideshow` plugin in your theme just follow below instructions.
 
-1. Go to Appearance > Widgets, we can simply drag & drop "YAS Slideshow" widget where ever you want to display it.
+1. Go to Appearance > Widgets, we can simply drag & drop "LEVO Slideshow" widget where ever you want to display it.
 
-2. To configure your slideshow settings click on  "YAS Slideshow settings" on the leftside, and edit settings and click on "make config.xml" button.
+2. To configure your slideshow settings click on  "LEVO Slideshow settings" on the leftside, and edit settings and click on `make config.xml` button.
 
 3. If you want display this widget on any certain pages of your site just you need to install 
 "widget-context" (http://wordpress.org/extend/plugins/widget-context/) plugin . 
@@ -71,7 +71,7 @@ After installing "wp-yasslideshow" plugin in your theme just follow below instru
 
 == How to use plug-in in the template code ==
 
-After installing "wp-levoslideshow" plugin, follow the instructions below.
+After install `wp-levoslideshow` plugin, follow the instructions below.
 
 1. Open your theme php file and add the line <?php echo do_shortcode('[levo_slideshow]');?> where ever you like to show the slide show.
 
