@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+.fg-toolbar
+{
+	background: none repeat scroll 0 0 #F1F1F1;
+    overflow: hidden;
+    padding: 8px;
+	/*
+	border-radius: 3px 3px 0px 0px;
+	*/
+	border-top: 1px solid #DFDFDF;
+	border-right: 1px solid #DFDFDF;
+	border-left: 1px solid #DFDFDF;
+	border-bottom: 1px solid #DFDFDF;
+}
+.ui-corner-tr {
+    border-top-right-radius: 4px;
+}
+.ui-corner-tl {
+    border-top-left-radius: 4px;
+}
+.ui-corner-br {
+    border-bottom-right-radius: 4px;
+}
+.ui-corner-bl {
+    border-bottom-left-radius: 4px;
+}
+.data-table
+{
+	margin: 0px 0px;
+}
+.dataTables_length
+{
+	float: left;
+}
+.dataTables_filter
+{
+	float: right;
+}
+.dataTables_info
+{
+	float: left;
+}
+.dataTables_paginate
+{
+	float: right;
+}
+.fg-button,
+.paginate_disabled_previous, .paginate_enabled_next, .paginate_disabled_next, .paginate_disabled_previous, .paginate_enabled_previous
+{
+	width: 19px;
+	height: 19px;
+	margin-left: 3px;
+	float: left;
+	cursor: pointer;
+}
+.paginate_disabled_previous
+{
+	background: url(../images/back_disabled.jpg) no-repeat;
+}
+.paginate_disabled_next
+{
+	background: url(../images/forward_disabled.jpg) no-repeat;
+}
+.paginate_enabled_next
+{
+	background: url(../images/forward_enabled.jpg) no-repeat;
+}
+.paginate_enabled_previous
+{
+	background: url(../images/back_enabled.jpg) no-repeat;
+}
+.dataTables_paginate a:first-of-type
+{
+	background: url(../images/back_enabled.jpg) no-repeat;
+}
+.dataTables_paginate a:first-of-type.ui-state-disabled
+{
+	background-image: url(../images/back_disabled.jpg) !important;
+}
+.dataTables_paginate a:last-of-type
+{
+	background: url(../images/forward_enabled.jpg) no-repeat;
+}
+.dataTables_paginate a:last-of-type.ui-state-disabled
+{
+	background-image: url(../images/forward_disabled.jpg)!important;
+}
+#albums_pager span, #images_pager span
+{
+	cursor: pointer;
+	color: #555555;
+}
+span.pg-selected
+{
+	font-weight: bold;
+}

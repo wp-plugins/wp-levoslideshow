@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+#add_new_album_form
+{
+	display: none;
+}
+#menu_tabs
+{
+	overflow: hidden;
+	clear: both;
+	margin: 10px 0px 0px 0px;
+}
+#menu_tabs li
+{
+	float: left;
+	margin: 0px 8px 0px 0px;
+}
+#menu_tabs li a
+{
+	padding: 5px 7px;
+	display: block;
+	text-decoration: none;
+}
+#menu_tabs li a.current
+{
+	border-bottom: 1px solid #ffffff;
+}
+.tab_content
+{
+	display: none;
+}
+.tab
+{
+	border: 1px solid #cccccc;
+}
+#tabs_container
+{
+	padding: 9px;
+	border: 1px solid #cccccc;
+	width: 50%;
+}
+.tab_content fieldset
+{
+	padding: 12px;
+	border: 1px solid #cccccc;
+}
+.bulk_actions
+{
+	float: left;
+	margin: 0px 0px 0px 20px;
+}
+.textbox_order
+{
+	width: 60px;
+}

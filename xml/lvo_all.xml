@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="iso-8859-1"?><items>
+	
+<default>
+	<auto_slide>true</auto_slide>
+	<slide_time>5</slide_time>
+	<timer_x>550</timer_x>
+	<timer_y>330</timer_y>
+	<isReflection>true</isReflection>
+	<backColor_1>0x000000</backColor_1>
+	<backColor_2>0xcccccc</backColor_2>
+	<headerFontColor>0x00a156</headerFontColor>
+	<headerFontSize>23</headerFontSize>
+	<descFontColor>0x000000</descFontColor>
+	<descFontSize>23</descFontSize>
+	<bigImgWidth>700</bigImgWidth>
+	<bigImgHeight>320</bigImgHeight>
+	<smallImgWidth>300</smallImgWidth>
+	<smallImgHeight>250</smallImgHeight>
+</default>
+	<item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/big/Blue-hills.jpg</bigImg><bigUrl>http://vm.xmlswf.com/</bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/thumb/Blue-hills-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[Blue hills]]></header><desc><![CDATA[sdfafsadfsadf dfsa fdsa asf]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/big/Sunset.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/thumb/Sunset-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[Sunset]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/big/Water-lilies1.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/thumb/Water-lilies-resized1.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[Water lilies]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/big/Winter.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/1_uploadfolder/thumb/Winter-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[Winter]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/blogfamwford11.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/blogfamwford1-resized1.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[blogfamwford1]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/blogfamwford2.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/blogfamwford2-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[blogfamwford2]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/blogfamwford7.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/blogfamwford7-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[blogfamwford7]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/blogfamwford8.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/blogfamwford8-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[blogfamwford8]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/coltoneveblog2pp_w960_h640.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/coltoneveblog2pp_w960_h640-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[coltoneveblog2(pp_w960_h640)]]></header><desc><![CDATA[]]></desc></item><item> <bigImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/big/coltoneveblog3pp_w960_h640.jpg</bigImg><bigUrl></bigUrl>
+						<bigUrlOpenWindow>_blank</bigUrlOpenWindow>
+						<bigIsScaled>true</bigIsScaled> <smallImg>http://localhost/wordpress/wp-content/uploads/levoslideshow/2_uploadfolder/thumb/coltoneveblog3pp_w960_h640-resized.jpg</smallImg><smallUrl></smallUrl> 
+					<smallUrlOpenWindow>_blank</smallUrlOpenWindow>
+					
+					<smallX>100</smallX>
+					<smallY>150</smallY>
+
+					<smallIsScaled>true</smallIsScaled><header><![CDATA[coltoneveblog3(pp_w960_h640)]]></header><desc><![CDATA[]]></desc></item>
+	</items>
