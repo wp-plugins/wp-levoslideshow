@@ -22,7 +22,7 @@
 	<h2><?php _e('Levo Slideshow Installation Video'); ?></h2>
 	<p>
 	<h3>WordPress Levo Slideshow Installation Video</h3>
-		<iframe width="560" height="315" src="http://www.youtube.com/embed/mQw0SWNA-yo" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/cxXfowLy-ps" frameborder="0" allowfullscreen></iframe>
 	</p>
 
 </div>

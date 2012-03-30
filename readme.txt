@@ -25,7 +25,7 @@ Levo Slideshow can be shown in the posts using the short code [levo]. You can di
 
 
 
-Installation Video: http://www.youtube.com/embed/WdFTgivoens
+Installation Video: http://www.youtube.com/watch?feature=player_embedded&v=cxXfowLy-ps
 
 For working demo : http://vm.xmlswf.com./wordpress-plugins/wp-levo-slideshow
 
@@ -60,7 +60,7 @@ Requirements/Restrictions:
 
 If you facing any issues in using this plugin please contact our support at addons@wpslideshow.com
 
-Installation Video: http://www.youtube.com/embed/WdFTgivoens
+Installation Video: http://www.youtube.com/watch?feature=player_embedded&v=cxXfowLy-ps
 
 For working demo : http://vm.xmlswf.com./wordpress-plugins/wp-levo-slideshow
 
