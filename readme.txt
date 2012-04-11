@@ -88,3 +88,6 @@ Initial released version
 =2.0=
 This is entirely new build. It is not possible to upgrade from old version to this version. You need to uninstall old version an dinstall the new version.
 
+=2.1=
+Where ever you place the short code, there only the slider shows. Previously it use to show on top of content.
+

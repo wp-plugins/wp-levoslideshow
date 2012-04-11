@@ -106,7 +106,8 @@ function shortcode_display_lvo_gallery($atts)
 							$atts );
 	//extract( $vars );
 	
-	display_lvo_gallery($vars);
+	$ret = display_lvo_gallery($vars);
+	return $ret;
 }
 function display_lvo_gallery($vars)
 {
@@ -335,7 +336,7 @@ function display_lvo_gallery($vars)
 		$xml = fread($fh, filesize(LVO_PLUGIN_XML_DIR . '/' . $xml_filename));
 		fclose($fh);
 		//print "<h3>Getting xml file from cache: $xml_filename</h3>";
-		echo "
+		$ret_str = "
 		<script language=\"javascript\">AC_FL_RunContent = 0;</script>
 <script src=\"".LVO_PLUGIN_URL."/js/AC_RunActiveContent.js\" language=\"javascript\"></script>
 
@@ -370,7 +371,7 @@ function display_lvo_gallery($vars)
 ";
 //echo LVO_PLUGIN_UPLOADS_URL."<hr>";
 //		print $xml;
-		return true;
+		return $ret_str;
 	}
 	return true;
 }

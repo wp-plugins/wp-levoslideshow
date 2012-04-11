@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Levo Slideshow
-Version: 2.0
+Version: 2.1
 Plugin URI: http://wpslideshow.com/levo-slidehsow/
 Description: A Gallery Management Plugin
 Author: WP Slideshow
