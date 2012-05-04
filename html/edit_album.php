@@ -50,15 +50,15 @@ if( !($album = $wpdb->get_row($query, ARRAY_A)) )
 					<input type="hidden" name="album_id" value="<?php print $album['album_id']; ?>" />
 					<table>
 					<tr>
-						<td><label><?php _e('Album Name'); ?></label></td>
+						<td><label><?php _e('Category Name'); ?></label></td>
 						<td><input type="text" id="album_name" name="album_name" value="<?php print $album['name']; ?>" /></td>
 					</tr>
 					<tr>
-						<td><label><?php _e('Album Description'); ?></label></td>
+						<td><label><?php _e('Category Description'); ?></label></td>
 						<td><textarea id="album_desc" name="album_desc"><?php print $album['description']; ?></textarea></td>
 					</tr>
 					<tr>
-						<td><label><?php _e('Album Image'); ?></label></td>
+						<td><label><?php _e('Category Image'); ?></label></td>
 						<td>
 							<input type="file" name="album_img" value="" />
 							<img src="<?php print lvo_get_album_url($album['album_id']) . '/thumb/' . $album['thumb']; ?>" />

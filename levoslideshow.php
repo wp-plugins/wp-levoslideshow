@@ -100,7 +100,7 @@ class LevoSlideshow
 							create_function('', 'require_once LVO_PLUGIN_DIR . "/html/about.php";'));
 		add_submenu_page('levoslideshow_menu', __('Levo Slideshow Setting'), __('Settings'), 8, 'levoslideshow_settings', 
 							create_function('', 'require_once LVO_PLUGIN_DIR . "/html/settings.php";'));
-		add_submenu_page('levoslideshow_menu', __('Levo Slideshow Management'), __('Album Management'), 8, 'levoslideshow_manage', 
+		add_submenu_page('levoslideshow_menu', __('Levo Slideshow Management'), __('Category Management'), 8, 'levoslideshow_manage', 
 							create_function('', 'require_once LVO_PLUGIN_DIR . "/html/manage.php";'));
 		add_submenu_page('levoslideshow_menu', __('Levo Slideshow Cache'), __('Delete Cache'), 8, 'levoslideshow_cache', 
 							create_function('', 'require_once LVO_PLUGIN_DIR . "/html/cache.php";'));

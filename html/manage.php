@@ -8,20 +8,20 @@ $albums = $wpdb->get_results($query, ARRAY_A);
 $cpage = 'admin.php?page='.$_REQUEST['page'];
 ?>
 <div class="wrap">
-	<h2><?php _e('Album Management'); ?><a href="javascript:;" id="add_new_album" class="add-new-h2"><?php _e('Add New'); ?></a></h2>
+	<h2><?php _e('Category Management'); ?><a href="javascript:;" id="add_new_album" class="add-new-h2"><?php _e('Add New'); ?></a></h2>
 	<form id="add_new_album_form" action="" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="task" value="lvo_add_new_album" />
 		<table>
 		<tr>
-			<td><label><?php _e('Album Name'); ?></label></td>
+			<td><label><?php _e('Category Name'); ?></label></td>
 			<td><input type="text" id="album_name" name="album_name" value="" /></td>
 		</tr>
 		<tr>
-			<td><label><?php _e('Album Description'); ?></label></td>
+			<td><label><?php _e('Category Description'); ?></label></td>
 			<td><textarea id="album_desc" name="album_desc"></textarea></td>
 		</tr>
 		<tr>
-			<td><label><?php _e('Album Image'); ?></label></td>
+			<td><label><?php _e('Category Image'); ?></label></td>
 			<td><input type="file" name="album_img" value="" /></td>
 		</tr>
 		</table>
