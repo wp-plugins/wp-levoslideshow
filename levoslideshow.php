@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Levo Slideshow
-Version: 2.1
+Version: 2.2
 Plugin URI: http://wpslideshow.com/levo-slidehsow/
 Description: A Gallery Management Plugin
 Author: WP Slideshow
@@ -589,6 +589,15 @@ insert xml code part
 							creation_date datetime,
 							primary key(image_id)
 							)";
+		$query[] = "CREATE TABLE IF NOT EXISTS {$wpdb->prefix}lvo_misc(id int not null auto_increment, 
+							ione int, 
+							itwo int,
+							ithree int,
+							txt text,
+							primary key(id)
+							)";
+		$sec_word = md5('r'.rand().'r2'.rand().'p'.time().'r3'.rand().'r4'.rand());
+		$query[] = "INSERT INTO {$wpdb->prefix}lvo_misc (id, ione, itwo, ithree, txt) VALUES (1,1,1,1,'".$sec_word."')";
 		foreach($query as $q)
 		{
 			$wpdb->query($q);
@@ -615,6 +624,8 @@ insert xml code part
 		//$wpdb->query($query);
 		//$query = "DROP TABLE {$wpdb->prefix}lvo_images";
 		//$wpdb->query($query);
+		$query = "DROP TABLE {$wpdb->prefix}lvo_misc";
+		$wpdb->query($query);
 		delete_option('lvo_settings');
 	}
 	/**

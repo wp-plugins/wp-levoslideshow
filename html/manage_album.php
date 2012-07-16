@@ -161,6 +161,16 @@ global $glvo;
 	</form>
 	<script type="text/javascript">
 	var lvo_upload_dir = "<?php  /* add the replace "\\" to work on windows server */  print str_replace("\\","/",lvo_get_album_dir($album['album_id'])); ?>";
+	var lvo_secw = "<?php 
+	global $wpdb;
+	$query = "SELECT txt FROM {$wpdb->prefix}lvo_misc WHERE ione=1 AND itwo=1 AND ithree=1 LIMIT 1";
+	$secw_arr = $wpdb->get_row($query, ARRAY_A);
+	if( empty($secw_arr) ) {
+		$secw = '';
+	} else {
+		$secw = $secw_arr['txt'];
+	}
+	print $secw ?>";
 	</script>
 </div><!-- end id="single_upload" -->
 </div><!-- end id="tab_container" -->

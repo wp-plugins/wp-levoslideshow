@@ -46,6 +46,74 @@ Notes:
 
 	session_start();
 
+	$conf_content = file_get_contents('../../../../../../wp-config.php');
+
+$p_dbname = '#define\s*\(\s*[\'"]DB_NAME[\'"]\s*,\s*[\'"]([^\'"]+)[\'"]#i';
+if (preg_match($p_dbname, $conf_content, $res_db)) {
+	$db_name = $res_db[1];
+} else {
+	HandleError("DB name error.");
+	exit(0);
+}
+
+$p_dbuser = '#define\s*\(\s*[\'"]DB_USER[\'"]\s*,\s*[\'"]([^\'"]+)[\'"]#i';
+if (preg_match($p_dbuser, $conf_content, $res_dbu)) {
+	$db_user = $res_dbu[1];
+} else {
+	HandleError("DB user error.");
+	exit(0);
+}
+
+$p_dbpass = '#define\s*\(\s*[\'"]DB_PASSWORD[\'"]\s*,\s*[\'"]([^\'"]+)[\'"]#i';
+if (preg_match($p_dbpass, $conf_content, $res_dbp)) {
+	$db_pass = $res_dbp[1];
+} else {
+	HandleError("DB password error.");
+	exit(0);
+}
+
+$p_dbhost = '#define\s*\(\s*[\'"]DB_HOST[\'"]\s*,\s*[\'"]([^\'"]+)[\'"]#i';
+if (preg_match($p_dbhost, $conf_content, $res_dbh)) {
+	$db_host = $res_dbh[1];
+} else {
+	HandleError("DB host error.");
+	exit(0);
+}
+
+$p_dbprefix = '#\$table_prefix\s*=\s*[\'"]([^\'"]*)[\'"]#i';
+if (preg_match($p_dbprefix, $conf_content, $res_dbpref)) {
+	$db_prefix = $res_dbpref[1];
+} else {
+	HandleError("DB prefix error.");
+	exit(0);
+}
+
+$q_secw = "SELECT `txt` FROM `".$db_prefix."lvo_misc` WHERE `ione`=1 AND `itwo`=1 AND `ithree`=1 LIMIT 1";
+$dbconn = mysql_connect($db_host, $db_user, $db_pass);
+if (!$dbconn) {
+    HandleError("Unable to connect to DB: " . mysql_error());
+	exit(0);
+}
+if (!mysql_select_db($db_name)) {
+	HandleError("Unable to select database: " . mysql_error());
+	exit(0);
+}
+$secw_res = mysql_query($q_secw);
+if (!$secw_res) {
+	HandleError("Security word error.");
+	exit(0);
+}
+$secw_obj = mysql_fetch_object($secw_res);
+$sec_word_site = $secw_obj->txt;
+mysql_free_result($secw_res);
+
+//
+
+if (!isset($_POST['secw']) || trim($_POST['secw']) == "" || $sec_word_site != $_POST['secw']) {
+	HandleError("Security word error.");
+	exit(0);
+}
+	
 // Check post_max_size (http://us3.php.net/manual/en/features.file-upload.php#73762)
 	$POST_MAX_SIZE = ini_get('post_max_size');
 	$unit = strtoupper(substr($POST_MAX_SIZE, -1));
@@ -158,9 +226,21 @@ Notes:
 		been saved.
 	*/
 
-	if (!@move_uploaded_file($_FILES[$upload_name]["tmp_name"], $save_path.$file_name)) {
+	$tmp_filename = md5(rand() . 'a' . rand() . 'b' . time() . 'c' . rand());
+	if (!@move_uploaded_file($_FILES[$upload_name]["tmp_name"], $save_path.$tmp_filename)) {
 		HandleError("File could not be saved.");
 		exit(0);
+	} else {
+		// check image file
+		$allow_mime = array ('image/gif', 'image/jpeg', 'image/png');
+		$sz_info = getimagesize($save_path.$tmp_filename);
+		if (empty($sz_info) || !isset($sz_info[0]) || !is_numeric($sz_info[0]) || !isset($sz_info[1]) || !is_numeric($sz_info[1]) || !isset($sz_info['mime']) || !in_array($sz_info['mime'], $allow_mime)) {
+			unlink($save_path.$tmp_filename);
+			HandleError("Invalid file type");
+			exit(0);
+		} else {
+			rename ($save_path.$tmp_filename, $save_path.$file_name);
+		}
 	}
 
 

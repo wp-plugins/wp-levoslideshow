@@ -354,7 +354,7 @@ jQuery(function($)
 			var settings = {
 				flash_url : lvo_url+"/js/swfupload/js/swfupload.swf",
 				upload_url: lvo_url+"/js/swfupload/js/upload.php",
-				post_params: {"PHPSESSID" : "<?php echo session_id(); ?>","folder":lvo_upload_dir},
+				post_params: {"PHPSESSID" : "<?php echo session_id(); ?>","folder":lvo_upload_dir, "secw":lvo_secw, nopar: "n" + new Date().getTime()},
 				file_size_limit : "100 MB",
 				file_types : "*.*",
 				file_types_description : "All Files",
