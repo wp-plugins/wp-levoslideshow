@@ -72,10 +72,6 @@ global $glvo;
 			<td><textarea name="image_description"></textarea></td>
 		</tr>
 		<tr>
-			<td><?php _e('Price'); ?></td>
-			<td><input type="text" name="image_price" value="" /></td>
-		</tr>
-		<tr>
 			<td><?php _e('Upload Image'); ?></td>
 			<td><input type="file" name="image_file" value="" /></td>
 		</tr>
@@ -142,10 +138,6 @@ global $glvo;
 		<fieldset>
 			<legend><?php _e('Upload Options'); ?></legend>
 			<table>
-			<tr>
-				<td><?php _e('Price'); ?></td>
-				<td><input type="text" id="multi_image_price" name="image_price" value="" /></td>
-			</tr>
 			</table>
 			<fieldset>
 

@@ -68,10 +68,6 @@ if( !($image = $glvo->get_image($image_id)) )
 						<td><textarea id="image_description" name="image_description"><?php print $image['description']; ?></textarea></td>
 					</tr>
 					<tr>
-						<td><label><?php _e('Image Price'); ?></label></td>
-						<td><input type="text" id="image_price" name="image_price" value="<?php print @$image['price']; ?>" /></td>
-					</tr>
-					<tr>
 						<td><label><?php _e('Image Link'); ?></label></td>
 						<td><input type="text" id="image_link" name="image_link" value="<?php print @$image['link']; ?>" /></td>
 					</tr>
