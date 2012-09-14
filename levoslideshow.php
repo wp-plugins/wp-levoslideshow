@@ -15,6 +15,65 @@ define('LVO_PLUGIN_XML_DIR', LVO_PLUGIN_DIR . '/xml');
 define('LVO_PLUGIN_XML_URL', LVO_PLUGIN_URL . '/xml');
 
 require_once LVO_PLUGIN_DIR . '/functions.php';
+
+class LevoslideshowWidget extends WP_Widget
+{
+  function LevoslideshowWidget()
+  {
+    $widget_ops = array('classname' => 'LevoslideshowWidget', 'description' => 'Displays Levoslideshow' );
+    $this->WP_Widget('LevoslideshowWidget', 'Levoslideshow widget', $widget_ops);
+  }
+ 
+  function form($instance)
+  {
+    $instance = wp_parse_args( (array) $instance, array( 'title' => '' ) );
+    $title = $instance['title'];
+?>
+  <p><label for="<?php echo $this->get_field_id('title'); ?>">Type categories or product id-s, or blank to show all. Example1: cats=2,4,5 Example2: imgs=1,3,19,7 <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
+<?php
+  }
+ 
+  function update($new_instance, $old_instance)
+  {
+    $instance = $old_instance;
+    $instance['title'] = $new_instance['title'];
+    return $instance;
+  }
+ 
+  function widget($args, $instance)
+  {
+    extract($args, EXTR_SKIP);
+ 
+    echo $before_widget;
+    $title = empty($instance['title']) ? ' ' : apply_filters('widget_title', $instance['title']);
+	
+	$vars = array();
+    if (empty($title)) {
+		$vars = array('cats' => '','imgs' => '');
+	} else {
+		$ptr_cats = '#\s*cats\s*=\s*([0123456789, ]+)\s*#';
+		if (preg_match($ptr_cats, $title, $result) > 0) {
+			$vars['cats'] = $result[1];
+		} else {
+			$vars['cats'] = '';
+			$ptr_imgs = '#\s*imgs\s*=\s*([0123456789, ]+)\s*#';
+			if (preg_match($ptr_imgs, $title, $result) > 0) {
+				$vars['imgs'] = $result[1];
+			} else {
+				$vars['imgs'] = '';
+			}
+		}
+	}
+	$ret_html = display_lvo_gallery($vars);
+    echo $ret_html;
+ 
+    echo $after_widget;
+  }
+ 
+}
+add_action( 'widgets_init', create_function('', 'return register_widget("LevoslideshowWidget");') );
+
+
 class LevoSlideshow
 {
 	private $errors = array(); 
