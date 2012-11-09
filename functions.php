@@ -23,7 +23,7 @@ function lvo_get_def_settings()
 			'smlImg_xposition' => '100',
 			'smlImg_yposition' => '150',
 			'smallimg_scalling' => 'no',
-			'small_target' => '_blank',
+			'small_target' => '_self',
 			'wmode' => 'transparent',
 			'show_bigimg' => 'yes',
 			'show_smlimg' => 'yes',
