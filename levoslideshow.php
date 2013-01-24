@@ -662,6 +662,12 @@ insert xml code part
 			$wpdb->query($q);
 		}
 		//create folders
+		if( !is_dir(WP_CONTENT_DIR.'/uploads') )
+		{
+			mkdir(WP_CONTENT_DIR.'/uploads');
+			chmod(WP_CONTENT_DIR.'/uploads', 0755);					
+		}
+
 		if( !is_dir(LVO_PLUGIN_UPLOADS_DIR) )
 		{
 			mkdir(LVO_PLUGIN_UPLOADS_DIR);
