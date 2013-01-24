@@ -90,7 +90,7 @@ class LevoSlideshow
 		$this->add_shortcodes();
 		$this->add_scripts();
 		if( !is_dir(LVO_PLUGIN_UPLOADS_DIR) )
-			$this->errors[] = __('Levo Slideshow: The uploads dir does not exists, please create it and set write permissions');
+			$this->errors[] = __('Levo Slideshow: The uploads dir does not exists, please create "levoslideshow" directory under "'.WP_CONTENT_DIR.' /uploads/"');
 		if( is_dir(LVO_PLUGIN_UPLOADS_DIR) && !is_writable(LVO_PLUGIN_UPLOADS_DIR) )
 			$this->errors[] = sprintf(__('Levo Slideshow: The upload dir "%s" is not writable, please set writte permissions'), LVO_PLUGIN_UPLOADS_DIR);
 		if( !is_dir(LVO_PLUGIN_XML_DIR) )
